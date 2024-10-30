@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <div class="full-view">
+            <img id="currentImage" src="artur-adilkhanian-tDqn8GeRgnU-unsplash.jpg" alt="Image">
+        </div>
+        <div class="thumbnails">
+            <img src="artur-adilkhanian-tDqn8GeRgnU-unsplash.jpg" alt="Image 1" class="thumbnail active" data-index="0">
+            <img src="evgeni-tcherkasski-TQygODn181I-unsplash.jpg" alt="Image 2" class="thumbnail" data-index="1">
+            <img src="adrien-milcent-n3bHMAPh6c4-unsplash.jpg" alt="Image 3" class="thumbnail" data-index="2">
+            <img src="lukas-parnican-3Wr5i6LObLA-unsplash copy.jpg" alt="Image 4" class="thumbnail" data-index="3">
+        </div>
+        <div class="controls">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
